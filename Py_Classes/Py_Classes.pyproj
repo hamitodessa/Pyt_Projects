@@ -1,0 +1,71 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>a682ba1c-fb23-44b9-8d93-db4321928f0f</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Py_Classes</Name>
+    <RootNamespace>Py_Classes</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Cal_Dizini\" />
+    <Folder Include="fh\" />
+    <Folder Include="Global\" />
+    <Folder Include="lg\" />
+    <Folder Include="lg\lg_kayit\" />
+    <Folder Include="Yardimci_Classlar\" />
+    <Folder Include="User_Islemleri\" />
+    <Folder Include="Server_Baglan\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cal_Dizini\Baglan.py" />
+    <Compile Include="Cal_Dizini\Baglan_Log.py" />
+    <Compile Include="Cal_Dizini\Bilgi_Okuma.py" />
+    <Compile Include="Cal_Dizini\Bilgi_Oku_Log.py" />
+    <Compile Include="Cal_Dizini\Dizin_Bilgileri.py" />
+    <Compile Include="Cal_Dizini\Log_Mail_Oku.py" />
+    <Compile Include="fh\Access_DB.py" />
+    <Compile Include="fh\Dao_MsSql.py" />
+    <Compile Include="fh\Dao_MySql.py" />
+    <Compile Include="fh\IFihrist.py" />
+    <Compile Include="Global\Global.py" />
+    <Compile Include="lg\Dao_Mail_At.py" />
+    <Compile Include="lg\ILoger.py" />
+    <Compile Include="lg\lg_kayit\Dao_MsSql.py" />
+    <Compile Include="lg\lg_kayit\Dao_MySql.py" />
+    <Compile Include="lg\lg_kayit\Dao_SqLite.py" />
+    <Compile Include="lg\lg_kayit\Dao_Txt.py" />
+    <Compile Include="lg\lg_kayit\ILog_Kayit.py" />
+    <Compile Include="Server_Baglan\Connect.py" />
+    <Compile Include="Server_Baglan\IConnection.py" />
+    <Compile Include="Server_Baglan\OBS_Ortak_MsSql.py" />
+    <Compile Include="Server_Baglan\OBS_Ortak_MySql.py" />
+    <Compile Include="Server_Baglan\OBS_Ortak_SqLite.py" />
+    <Compile Include="User_Islemleri\User_Details.py" />
+    <Compile Include="User_Islemleri\User_Islemler.py" />
+    <Compile Include="Yardimci_Classlar\Encrypt_Decrypt_String.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

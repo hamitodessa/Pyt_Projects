@@ -1,0 +1,65 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>8ab0307c-e641-4269-a711-73bb6ac5c340</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>fhr\Start.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Pyt_Fihrist</Name>
+    <RootNamespace>Pyt_Fihrist</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="fhr\Start.py" />
+    <Compile Include="fhr\UI_Files\Anapencere.py" />
+    <Compile Include="fhr\UI_Files\Basla.py" />
+    <Compile Include="fhr\UI_Files\fih_resources.py" />
+    <Compile Include="fhr\UI_Files\ui_to_py.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Py_Classes\Py_Classes.pyproj">
+      <Name>Py_Classes</Name>
+      <Project>{a682ba1c-fb23-44b9-8d93-db4321928f0f}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="fhr\" />
+    <Folder Include="fhr\UI_Files\" />
+    <Folder Include="fhr\UI_Files\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fhr\UI_Files\add-32.png" />
+    <Content Include="fhr\UI_Files\anapencere.ui" />
+    <Content Include="fhr\UI_Files\connected-32.png" />
+    <Content Include="fhr\UI_Files\database-32.png" />
+    <Content Include="fhr\UI_Files\delete-32.png" />
+    <Content Include="fhr\UI_Files\exit-32.png" />
+    <Content Include="fhr\UI_Files\fih_resources.qrc" />
+    <Content Include="fhr\UI_Files\icons8-search-database-24.png" />
+    <Content Include="fhr\UI_Files\icons8-up-down-arrow-16.png" />
+    <Content Include="fhr\UI_Files\save-32.png" />
+    <Content Include="fhr\UI_Files\__pycache__\Anapencere.cpython-311.pyc" />
+    <Content Include="fhr\UI_Files\__pycache__\fih_resources.cpython-311.pyc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
