@@ -5,17 +5,20 @@ Created on Apr 1, 2023
 '''
 
 import sys
+import sys
+sys.path.append('../User_Islemler')
 
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import *
 from tkinter import messagebox
-from PyQt5.QtCore import Qt
+from PyQt5.QtCore import Qt 
 from PyQt5.QtWidgets import QApplication ,QMainWindow,QWidget,QInputDialog
 
-from Global import Global  as glb
+
+
 from User_Islemleri import User_Islemler as uisl
 from fh.Access_DB import Fihrist_Access 
-
+from Global import Global  as glb
 
 import Cal_Dizini.Baglan as bAGLAN
 import Cal_Dizini.Baglan_Log as bAGLAN_LOG
@@ -32,11 +35,7 @@ ui.setupUi(penAna)
 
 
 #import pdb;pdb.set_trace()
-
-
-
 #glb.obs_dosya_olustur()
-
 #glb._Fihrist = [glb.Ms_Sql,glb.My_Sql]
 #glb._IFihrist_Loger = [glb.Maill,glb.Dao_MsSql,glb.Dao_MySql,glb.Dao_SqLite,glb.Dao_Txt]
 #fih = Fihrist_Access(glb._Fihrist,glb._IFihrist_Loger)

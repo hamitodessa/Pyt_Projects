@@ -3,7 +3,11 @@ Created on Apr 1, 2023
 
 @author: hamit
 '''
-    
+
+import sys
+sys.path.append("../Py_Classes")
+
+
 #region SURUCU_DOSYA_BILGILERI
 SURUCU = "C:/OBS_SISTEM/"
 OBS_DOSYA = "OBS_SISTEM_2025.DB"

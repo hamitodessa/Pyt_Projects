@@ -13,6 +13,7 @@
     <Name>Py_Classes</Name>
     <RootNamespace>Py_Classes</RootNamespace>
     <InterpreterId>Global|PythonCore|3.11</InterpreterId>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
