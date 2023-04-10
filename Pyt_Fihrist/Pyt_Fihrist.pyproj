@@ -11,6 +11,7 @@
     <OutputPath>.</OutputPath>
     <Name>Pyt_Fihrist</Name>
     <RootNamespace>Pyt_Fihrist</RootNamespace>
+    <InterpreterId>Global|PythonCore|3.11</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -52,6 +53,9 @@
     <Content Include="fhr\UI_Files\save-32.png" />
     <Content Include="fhr\UI_Files\__pycache__\Anapencere.cpython-311.pyc" />
     <Content Include="fhr\UI_Files\__pycache__\fih_resources.cpython-311.pyc" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.11" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
